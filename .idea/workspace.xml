@@ -4,29 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="293a81fc-edba-4583-adc3-3f0820f78b46" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/flyway.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/SpringBatchApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/config/SpringBatchConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/config/SpringConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/item/Payment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/mapper/PaymentFieldSetMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/tasklet/FileMoveTasklet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/validator/PaymentValidator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/db/migration/V01__create_table_payment_tab.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/springBashContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/spring/batch/AnnotationBatchTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/spring/batch/XmlBatchTest.java" afterDir="false" />
+    <list default="true" id="293a81fc-edba-4583-adc3-3f0820f78b46" name="Changes" comment="init commit">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/database.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/spring/batch/config/SpringConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/spring/batch/config/SpringConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/springContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/springContext.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,26 +51,26 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/projects/java/spring-batch",
+    "last_opened_file_path": "C:/projects/java/spring-batch/src/main/resources",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
-    "spring.configuration.checksum": "6f0f5de15ea9519e3530a25e16e4b551",
+    "spring.configuration.checksum": "56a0a0d9daeeb77cf2736af441fe119a",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\projects\java\spring-batch\src\main\resources" />
       <recent name="C:\projects\java\spring-batch\src\test\resources" />
       <recent name="C:\projects\java\spring-batch\csv" />
       <recent name="C:\projects\java\spring-batch" />
-      <recent name="C:\projects\java\spring-batch\src\main\resources" />
       <recent name="C:\projects\java\spring-batch\src\main\resources\db\migration" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\projects\java\spring-batch\src\main\resources" />
       <recent name="C:\projects\java\spring-batch\csv" />
+      <recent name="C:\projects\java\spring-batch\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="org.spring.batch.domain" />
@@ -126,6 +108,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AnnotationBatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-batch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.spring.batch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.spring.batch" />
+      <option name="MAIN_CLASS_NAME" value="org.spring.batch.AnnotationBatchTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnnotationBatchTest.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-batch" />
       <extension name="coverage">
@@ -158,7 +155,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="XmlBatchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-batch" />
       <extension name="coverage">
         <pattern>
@@ -167,9 +164,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.spring.batch" />
-      <option name="MAIN_CLASS_NAME" value="org.spring.batch.Test" />
-      <option name="METHOD_NAME" value="test" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.spring.batch.XmlBatchTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -193,9 +189,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.XmlBatchTest.test" />
+        <item itemvalue="JUnit.XmlBatchTest" />
+        <item itemvalue="JUnit.AnnotationBatchTest" />
         <item itemvalue="JUnit.AnnotationBatchTest.test" />
         <item itemvalue="JUnit.MoveTest.test" />
-        <item itemvalue="JUnit.Test.test" />
       </list>
     </recent_temporary>
   </component>
@@ -209,8 +206,19 @@
       <updated>1676042769038</updated>
       <workItem from="1676042770134" duration="1798000" />
       <workItem from="1676271977302" duration="23436000" />
-      <workItem from="1676358215649" duration="330000" />
+      <workItem from="1676358215649" duration="3410000" />
+      <workItem from="1676470488051" duration="605000" />
+      <workItem from="1676562085414" duration="962000" />
+      <workItem from="1676637896363" duration="208000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <created>1676358702968</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1676358702968</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,5 +226,9 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>

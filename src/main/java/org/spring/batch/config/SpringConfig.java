@@ -9,6 +9,7 @@ import org.springframework.batch.support.transaction.ResourcelessTransactionMana
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.io.Resource;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.jdbc.datasource.init.DataSourceInitializer;
@@ -19,7 +20,20 @@ import javax.sql.DataSource;
 
 @Configuration
 @EnableBatchProcessing
+@PropertySource("classpath:database.properties")
 public class SpringConfig {
+
+    @Value("${database.psql.url}")
+    private String url;
+
+    @Value("${database.psql.username}")
+    private String username;
+
+    @Value("${database.psql.password}")
+    private String password;
+
+    @Value("${database.psql.driver}")
+    private String driver;
 
     @Value("org/springframework/batch/core/schema-postgresql.sql")
     private Resource dataRepositorySchema;
@@ -30,10 +44,10 @@ public class SpringConfig {
     @Bean
     public DataSource dataSource() {
         DriverManagerDataSource dataSource = new DriverManagerDataSource();
-        dataSource.setDriverClassName("org.postgresql.Driver");
-        dataSource.setUrl("jdbc:postgresql://localhost:5432/spring-batch");
-        dataSource.setUsername("postgres");
-        dataSource.setPassword("postgres");
+        dataSource.setDriverClassName(driver);
+        dataSource.setUrl(url);
+        dataSource.setUsername(username);
+        dataSource.setPassword(password);
         return dataSource;
     }
 
